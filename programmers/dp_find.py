@@ -5,7 +5,6 @@ def solution(m, n, puddles):
     for i in range(m):
         dp.append([0] * n)
     puddles = [[x[0]-1, x[1]-1] for x in puddles]
-    print(puddles)
     return solve_dp(dp, puddles, 0, 0, m, n)
 
 def solve_dp(dp, puddles, i, j, m, n):
